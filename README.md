@@ -1,6 +1,8 @@
 # VagrantShift
 SIFT Vagrant Environment
-This project provides a Vagrant environment for setting up the SANS Investigative Forensic Toolkit (SIFT) on a virtual machine. The Vagrantfile in this repository will automatically install SIFT on a Ubuntu virtual machine using the SIFT SaltStack formula.
+
+This project provides a Vagrant environment for setting up the SANS Investigative Forensic Toolkit (SIFT) on a virtual machine.
+The Vagrantfile in this repository will automatically install SIFT on a Ubuntu virtual machine using the SIFT SaltStack formula.
 
 Requirements
 To use this Vagrant environment, you'll need to have the following software installed on your host machine:
@@ -31,7 +33,8 @@ sql
 Copy code
 Set-ExecutionPolicy Bypass -Scope Process -Force; `
 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-choco install virtualbox vagrant -y
+choco install virtualbox -y 
+choco install vagrant -y
 Clone this repository or download the Vagrantfile to your local machine.
 
 Open a Command Prompt or PowerShell prompt and navigate to the directory where the Vagrantfile is located.
